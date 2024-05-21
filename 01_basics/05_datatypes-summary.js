@@ -31,5 +31,28 @@ const myFunction = function() {
     console.log("Hello World");
 }
 
-console.log(typeof myFunction); //returns function called object function
-console.log(typeof heroes); //object
+// console.log(typeof myFunction); //returns function called object function
+// console.log(typeof heroes); //object
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack(Primitive)-- is a copy, Heap(Non-Primitive)-- is a reference
+
+let myName = "Karan"
+
+let otherName = myName
+otherName = "Michie"
+
+console.log(myName);
+console.log(otherName);
+
+let userOne = {
+    email: "karan@google.com",
+    upi: "123@paytm.com",
+}
+
+let userTwo = userOne
+userTwo.email = "michie@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
