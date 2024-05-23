@@ -1,5 +1,6 @@
 // singleton
 Object.create //through constructor, creates singleton
+const myobj = new Object() //another way
 
 // object literals
 
